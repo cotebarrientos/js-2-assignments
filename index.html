@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/images/favicon.jpg"
+            sizes="16x16"
+        >
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" 
+            rel="stylesheet"
+        >
+        <!-- Font Awesome CDN -->
+        <link 
+            rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        >
+        <!-- CSS External File -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <!-- External JS file -->
+        <!-- <script 
+            type="text/javascript" 
+            src="./assets/js/script.js"
+            defer
+        >
+        </script> -->
+        <title>Let's play | Rock, Paper or Scissors</title>
+    </head>
+    <body>
+        <section class="hero-img-cover">
+            <section class="container jumbotron">
+                <h1>Let's Play <i class="fa-solid fa-gamepad"></i></h1>
+                <article class="score">
+                    <h2 class="ties">Ties: 0</h2>
+                </article>
+                <article class="winnerContainer">
+                    <h2 class="winner">You won this round!</h2>
+                    <button class="reset" onclick="resetGame()">
+                        Play Again? <i class="fa-solid fa-reply"></i>
+                    </button>
+                </article>
+                <article class="playerSection">
+                    <img 
+                        src="./assets/images/player.png"
+                        alt="Player"
+                        class="img__player"                        
+                    >
+                    <h3 class="playerChoice">You Selected: Paper</h3>
+                    <h3 class="playerScore">Score: 0</h3>
+                    <div id="my-buttons">
+                        <button class="btn-cyan">
+                            Rock <i class="fa-solid fa-hand-fist"></i>
+                        </button>
+                        <button class="btn-cyan">
+                            Paper <i class="fa-solid fa-hand"></i>
+                        </button>
+                        <button class="btn-cyan">
+                            Scissors <i class="fa-solid fa-hand-scissors"></i>
+                        </button>
+                    </div>
+                </article>
+                <article class="computerSection">
+                    <img 
+                        src="./assets/images/computer.png"
+                        alt="Computer"
+                        class="img__computer"
+                    >
+                    <h3 class="computerChoice">Computer Selected: Rock</h3>
+                    <h3 class="computerScore">Score: 0</h3>
+                    <div id="computer-buttons">
+                        <button class="btn-cyan">
+                            Rock <i class="fa-solid fa-hand-fist"></i>
+                        </button>
+                        <button class="btn-cyan">
+                            Paper <i class="fa-solid fa-hand"></i>
+                        </button>
+                        <button class="btn-cyan">
+                            Scissors <i class="fa-solid fa-hand-scissors"></i>
+                        </button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </body>
+</html>
