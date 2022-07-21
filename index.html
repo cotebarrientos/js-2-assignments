@@ -28,12 +28,12 @@
         <!-- CSS External File -->
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <!-- External JS file -->
-        <!-- <script 
+        <script 
             type="text/javascript" 
             src="./assets/js/script.js"
             defer
         >
-        </script> -->
+        </script>
         <title>Let's play | Rock, Paper or Scissors</title>
     </head>
     <body>
@@ -43,28 +43,22 @@
                 <article class="score">
                     <h2 class="ties">Ties: 0</h2>
                 </article>
-                <article class="winnerContainer">
-                    <h2 class="winner">You won this round!</h2>
-                    <button class="reset" onclick="resetGame()">
-                        Play Again? <i class="fa-solid fa-reply"></i>
-                    </button>
-                </article>
                 <article class="playerSection">
                     <img 
                         src="./assets/images/player.png"
                         alt="Player"
                         class="img__player"                        
                     >
-                    <h3 class="playerChoice">You Selected: Paper</h3>
+                    <h3 class="playerChoice"></h3>
                     <h3 class="playerScore">Score: 0</h3>
                     <div id="my-buttons">
-                        <button class="btn-cyan">
+                        <button class="btn-cyan" id="rock" type="button">
                             Rock <i class="fa-solid fa-hand-fist"></i>
                         </button>
-                        <button class="btn-cyan">
+                        <button class="btn-cyan" id="paper" type="button">
                             Paper <i class="fa-solid fa-hand"></i>
                         </button>
-                        <button class="btn-cyan">
+                        <button class="btn-cyan" id="scissors" type="button">
                             Scissors <i class="fa-solid fa-hand-scissors"></i>
                         </button>
                     </div>
@@ -75,19 +69,25 @@
                         alt="Computer"
                         class="img__computer"
                     >
-                    <h3 class="computerChoice">Computer Selected: Rock</h3>
+                    <h3 class="computerChoice"></h3>
                     <h3 class="computerScore">Score: 0</h3>
                     <div id="computer-buttons">
-                        <button class="btn-cyan">
+                        <button class="btn-cyan rock" type="button">
                             Rock <i class="fa-solid fa-hand-fist"></i>
                         </button>
-                        <button class="btn-cyan">
+                        <button class="btn-cyan paper" type="button">
                             Paper <i class="fa-solid fa-hand"></i>
                         </button>
-                        <button class="btn-cyan">
+                        <button class="btn-cyan scissors" type="button">
                             Scissors <i class="fa-solid fa-hand-scissors"></i>
                         </button>
                     </div>
+                </article>
+                <article class="winnerContainer">
+                    <h2 class="winner"></h2>
+                    <button class="reset" onclick="resetGame()">
+                        Play Again? <i class="fa-solid fa-reply pl-icon"></i>
+                    </button>
                 </article>
             </section>
         </section>
