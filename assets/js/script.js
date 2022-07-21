@@ -12,10 +12,6 @@ function startGame() {
             }
         })
     );
-    // console.log('$$$$$$$$$$$$$$$', gameButtons)
-    // console.log('$$$$$$$$$$$$$$$', gameButtons[0])
-    // console.log('$$$$$$$$$$$$$$$', gameButtons[1])
-    // console.log('$$$$$$$$$$$$$$$', gameButtons[2])
 }
 
 
