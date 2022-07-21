@@ -146,6 +146,10 @@ h2 {
     margin: 0;
 }
 
+h2.winner {
+    text-align: center;
+}
+
 .img__player,
 .img__computer{
     animation: grow-and-shrink 4000ms;
@@ -162,5 +166,52 @@ h2 {
     }
     100% {
       transform: scale(1);
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1280px) {
+    .hero-img-cover {
+        min-height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h2.winner {
+        font-size: 23px;
+        padding: 0 10px;
+    }
+    .game_rules {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .game_rules {
+        width: 250px;
+    }
+    #my-buttons button,
+    #computer-buttons button {
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+/* Iphone 5 */
+@media only screen and (max-width: 320px){
+    .hero-img-cover {
+        min-height: 950px;
+    }
+    #my-buttons button,
+    #computer-buttons button {
+        font-size: 14px;
+        margin: 5px;
     }
 }
